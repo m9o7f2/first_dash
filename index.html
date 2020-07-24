@@ -1,0 +1,258 @@
+<! DOCTYPT html>
+<html>
+  <head>
+    <title>dash</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+
+    <div class="side rounded">
+      <span class="side-close rounded">X</span>
+      <div class="img position-relative">
+        <div class="overlay w-100 h-100"></div>
+        <img class="img-fluid" src="img/02.jpg" alt="">
+        <div class="tit text-white text-center">
+          <h2 class="">T.J.Miller</h2>
+          <span>Miller@gmail.com</span>
+        </div>
+      </div>
+      <div class="side-info p-3 text-white">
+        <ul class="list-unstyled">
+          <li class="mb-3 font-weight-bold">Profile</li>
+          <li class="mb-3 font-weight-bold">Notification</li>
+          <li class="mb-3 font-weight-bold">Settings</li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      id="side"
+      class="side-bar text-white py-5 text-center position-fixed h-100"
+    >
+      <div class="logo py-3">
+        <i class="fab fa-xing-square d-block pb-2"></i>
+        <span>Dash X</span>
+      </div>
+      <div class="nab-bar text-left text-light">
+        <ul class="list-unstyled">
+          <li class="py-3 px-4">
+            <i class="fas fa-layer-group"></i>
+            <span class="ml-3">Project</span>
+          </li>
+          <li class="py-3 px-4">
+            <i class="fas fa-users"></i>
+            <span class="ml-3">Resourcing</span>
+          </li>
+          <li class="py-3 px-4">
+            <i class="fas fa-business-time"></i>
+            <span class="ml-3">Timesheets</span>
+          </li>
+          <li class="py-3 px-4">
+            <i class="fas fa-passport"></i>
+            <span class="ml-3">Documents</span>
+          </li>
+          <li class="py-3 px-4">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span class="ml-3">Income</span>
+          </li>
+          <li class="py-3 px-4">
+            <i class="fas fa-file"></i>
+            <span class="ml-3">Expenditure</span>
+          </li>
+          <li class="py-3 px-4">
+            <i class="fas fa-folder-open"></i>
+            <span class="ml-3">Assets</span>
+          </li>
+          <li class="py-3 px-4">
+            <i class="fas fa-calculator"></i>
+            <span class="ml-3">Liabillities</span>
+          </li>
+          <li class="py-3 px-4">
+            <i class="fas fa-money-check-alt"></i>
+            <span class="ml-3">Payments</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="sub-body">
+      <div class="info-bar border-bottom py-2 bg-light text-right w-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <ul class="list-unstyled m-auto">
+                <li class="d-inline-block px-2">
+                  <i class="fas fa-search"></i>
+                </li>
+                <li class="d-inline-block px-2">
+                  <i class="far fa-calendar-alt"></i>
+                </li>
+                <li class="d-inline-block px-2 position-relative ccc">
+                  <i class="far fa-bell"></i>
+                </li>
+                <li class="d-inline-block px-2 imguser">
+                  <img src="img/01.png" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="py-3 border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="m-auto">Income</h2>
+            <ul class="list-unstyled py-2">
+              <li class="active d-inline-block mr-5 pt-2 font-weight-bold">
+                Invoices
+              </li>
+              <li class="d-inline-block mr-5 pt-2 font-weight-bold">
+                Estimates
+              </li>
+              <li class="d-inline-block mr-5 pt-2 font-weight-bold">
+                Recurring Invoices
+              </li>
+              <li class="d-inline-block pt-2 font-weight-bold">Clints</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="sub-nav py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <ul class="list-unstyled">
+              <li class="d-inline-block mr-1">
+                <button type="submit" class="border p-1 bg-white dis">
+                  <i class="fas fa-copy"></i>
+                </button>
+              </li>
+              <li class="d-inline-block mr-1">
+                <button type="submit" class="border p-1 bg-white dis">
+                  <i class="fas fa-cut"></i>
+                </button>
+              </li>
+              <li class="d-inline-block mr-1">
+                <button onclick="printScreen()" type="submit" class="border p-1 bg-white">
+                  <i class="fas fa-print"></i>
+                </button>
+              </li>
+              <li class="d-inline-block mr-1">
+                <button type="submit" class="border p-1 bg-white">
+                  <i class="fas fa-bookmark"></i>
+                </button>
+              </li>
+              <li class="d-inline-block mr-1">
+                <button onclick="del ()" type="submit" class="border p-1 bg-white">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <div class="cont text-right">
+              <ul class="list-unstyled">
+                <li class="d-inline-block font-weight-bold mr-3"><span class="el-num">9</span> records</li>
+                <li class="d-inline-block font-weight-bold mr-3">
+                  <i class="far fa-star"></i>
+                  <span class="mr-3">Default View</span>
+                  <i class="fas fa-chevron-down c"></i>
+                </li>
+                <li class="d-inline-block mr-3">
+                  <i class="fas fa-sliders-h c"></i>
+                </li>
+                <li class="d-inline-block add">
+                  <i class="fas fa-plus-square"></i>
+                </li>
+              </u>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sub-body">
+      <div class="container">
+        <div class="cils title p-3 rounded w-100 mb-1">
+          <div class="row align-items-center">
+            <div class="col-lg-2">
+              <input class="check" disabled type="checkbox">
+              <span class="font-weight-bold ml-2">Number:</span>
+            </div>
+            <div class="col-lg-6">
+              <span class="font-weight-bold">Clinet:</span>
+            </div>
+            <div class="col-lg-2">
+              <span class="font-weight-bold">Amount:</span>
+            </div>
+            <div class="col-lg-2">
+              <span class="font-weight-bold">date :</span>
+              <span class="text-right float-right">State</span>
+            </div>
+          </div>
+        </div>
+        <div class="cils one box-shadow p-3 rounded w-100">
+          <div class="row align-items-center">
+            <div class="col-lg-2">
+              <input class="check"  type="checkbox">
+              <span class="font-weight-bold ml-2 cils-num">h001:</span>
+            </div>
+            <div class="col-lg-6">
+              <span class="font-weight-bold char"></span>
+              <span class="name font-weight-bold">Hanter Lee Seko</span>
+            </div>
+            <div class="col-lg-2">
+              <span class="font-weight-bold">$10,000</span>
+            </div>
+            <div class="col-lg-2">
+              <span class="font-weight-bold date">May 3 ,2017</span>
+            </div>
+          </div>
+        </div>
+        <div class="cils two box-shadow p-3 rounded w-100">
+          <div class="row align-items-center">
+            <div class="col-lg-2">
+              <input class="check"  type="checkbox">
+              <span class="font-weight-bold ml-2 cils-num">h001:</span>
+            </div>
+            <div class="col-lg-6">
+              <span class="font-weight-bold char"></span>
+              <span class="name font-weight-bold">Woah Inc</span>
+            </div>
+            <div class="col-lg-2">
+              <span class="font-weight-bold">$1,000</span>
+            </div>
+            <div class="col-lg-2">
+              <span class="font-weight-bold date">Jun 20 ,2019</span> 
+            </div>
+          </div>
+        </div>
+        <div class="cils two box-shadow p-3 rounded w-100">
+          <div class="row align-items-center">
+            <div class="col-lg-2">
+              <input class="check"  type="checkbox">
+              <span class="font-weight-bold ml-2 cils-num">h001:</span>
+            </div>
+            <div class="col-lg-6">
+              <span class="font-weight-bold char"></span>
+              <span class="name font-weight-bold">Shadow Inc</span>
+            </div>
+            <div class="col-lg-2">
+              <span class="font-weight-bold">$3,000</span>
+            </div>
+            <div class="col-lg-2">
+              <span class="font-weight-bold date">Feb 8 ,2020</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jq.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
